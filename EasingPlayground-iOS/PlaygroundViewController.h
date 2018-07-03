@@ -15,7 +15,7 @@
 #import "EasingFunctionGraphView.h"
 #import "EasingDeclarations.h"
 
-@interface PlaygroundViewController : UIViewController {
+@interface PlaygroundViewController : UIViewController <CAAnimationDelegate> {
 	BOOL animating;
 	NSInteger currentCurve, currentEasing;
 	AHEasingFunction currentFunction;
